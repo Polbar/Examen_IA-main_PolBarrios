@@ -9357,8 +9357,8 @@ GameObject:
   - component: {fileID: 1867780267}
   - component: {fileID: 1867780266}
   - component: {fileID: 1867780265}
-  - component: {fileID: 1867780264}
   - component: {fileID: 1867780263}
+  - component: {fileID: 1867780268}
   - component: {fileID: 1867780262}
   m_Layer: 0
   m_Name: Enemigo
@@ -9412,18 +9412,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1867780264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867780261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4452fe4a6162f941b17195be5e3303b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1867780265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9490,6 +9478,29 @@ Transform:
   - {fileID: 1326355473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1867780268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867780261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4452fe4a6162f941b17195be5e3303b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  _patrolPoints:
+  - {fileID: 347355777}
+  - {fileID: 2093806531}
+  - {fileID: 843342982}
+  - {fileID: 278570483}
+  - {fileID: 1843445262}
+  - {fileID: 712808281}
+  _visionRange: 20
+  _visionAngle: 120
+  _waitTime: 5
 --- !u!1 &1948552100
 GameObject:
   m_ObjectHideFlags: 0
